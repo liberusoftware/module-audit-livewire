@@ -12,7 +12,6 @@ final class AuditLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'audit-livewire');
-        Livewire\Livewire::component('audit-livewire-overview', Liberu\Foundation\AuditLivewire\Livewire\Overview::class);
+        Livewire::component('audit-livewire-overview', Liberu\Foundation\AuditLivewire\Livewire\Overview::class);
     }
 }
-
